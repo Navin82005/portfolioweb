@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+	<title>icons8-flutter-100</title>
+	<defs>
+		<image  width="70" height="88" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABYCAMAAAB/LHFdAAAAAXNSR0IB2cksfwAAAFFQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////CDfnXgAAABt0Uk5TAHHu//FvgPwUeX8T+3h3DWbMiDOZ8rN67fBtcb8ofAAAAdNJREFUeJzt2F9LwzAUBfCE6YaUOaGi3//LCSL4oOhgTmfa9U9uk3vvucnwyT425UfWLGfZ8Q6/vPfM/a/8QPZaf3MjV4xvUyyMoLj1HmUkZfPpQEZRQEZTMEZVIEZXEAZQAAZRdAZSVAZTNAZUFAZVZAZWRAZXJMagCIxF4RmTwjI2hWOMCsNYlTxjVrKMXckxBUqGKVFSpkhJmDJlyRQqC6ZUoUyxQphyJWYqlIipUWamSpmYOmVkKpWBqVXOTLXSM5KyOkTPiudiVJHPxTcHbhRVOqY5HmuV7lzc+H2tEp7zbssthUHpVur2IzsarzR0Ls46JuX89cs4NmXYDIljVMatuXCsyhQUxDErc2xFjl2JQnRyCpQ40genRCE/ML1TpNCfu+3J+XdMWdFcoEHUuGjBDMr/uZhXGAbNZ5lB81ljsHzWGCyfdQbJZ4TR8xljtHxGGTmfcYbP5104WrzCDJPPbW/sqCP+nU/zOUzkbZgSceRyYZHPbfxhiKNUHVE+zxPJOFrxMuZzm7xV4qg1UHA218uJJA5QSt39pBMZrmmLARUZs7/IfJDCDnCg+lB3sDJTdcBqVXPQoldxLlI73z//dQl+qUo+vMfHl+z9B//0C16g2omXjIaYAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="10" y="6"/>
+</svg>

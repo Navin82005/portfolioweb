@@ -1,0 +1,210 @@
+.loader-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.intro-video {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.intro-video.loaded {
+    opacity: .5;
+}
+
+
+.intro-section {
+    margin: 0;
+    padding-top: 80px;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.over-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw !important;
+    height: 75vh;
+    position: relative;
+    top: 0;
+    z-index: 0;
+
+}
+
+.over-video h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #FEFEFE;
+}
+
+.over-video p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    line-height: 25px;
+    font-weight: 600;
+    color: #FEFEFE;
+}
+
+.over-video .button a {
+    color: #FEFEFE;
+    text-decoration: none;
+    text-align: center;
+}
+
+.over-video .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    /* cursor: pointer; */
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.over-video .button::before,
+.over-video .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+}
+
+.over-video .button::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+.over-video .button::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+
+.over-video .button:active,
+.over-video .button:focus {
+    outline: none;
+}
+
+.over-video .button:active::before,
+.over-video .button:active::after {
+    right: 3px;
+    left: 3px;
+}
+
+.over-video .button:active::before {
+    top: 3px;
+}
+
+.over-video .button:active::after {
+    bottom: 3px;
+}
+
+.over-video .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff4655;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.over-video .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #ff4655;
+}
+
+.over-video .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #ff4655;
+    transition: all .3s ease;
+}
+
+.over-video .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #0f1923;
+    transform: skew(-15deg);
+    transition: all .3s ease;
+}
+
+.over-video .button_text {
+    position: relative;
+}
+
+.over-video .button:hover {
+    color: #ff4655;
+}
+
+.over-video .button:hover .button_sl {
+    width: calc(100% + 15px);
+}
+
+.over-video .button:hover .button_lg::after {
+    background-color: #fff;
+}
+
+
+.over-video-left-corner {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.intro-section .intro-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 80px;
+}
+
+
+
+
+@media (max-width: 760px) {}
+
+@media (max-width: 885px) {}
+
+@media (max-width: 950px) {}
+
+@media (max-width: 1090px) {}

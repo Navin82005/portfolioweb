@@ -1,0 +1,26 @@
+.terminal-text::after {
+    content: "_";
+    margin-left: 5px;
+    animation: blink 1s ease-in-out infinite;
+
+    background: linear-gradient(to right, #ec4899, #ef4444, #f59e0b);
+    /* from-pink-500 via-red-500 to-yellow-500 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
