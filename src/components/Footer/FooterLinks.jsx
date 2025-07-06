@@ -12,7 +12,7 @@ const FooterLinks = () => {
                     </Link>
                 </li>
                 <li className="mb-2">
-                    <Link to="/projects" className="cursor-none text-white hover:text-[#7808d0] hover:underline font-semibold">
+                    <Link to="/project" className="cursor-none text-white hover:text-[#7808d0] hover:underline font-semibold">
                         My Projects
                     </Link>
                 </li>

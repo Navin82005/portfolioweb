@@ -7,6 +7,7 @@ import NavigationBar from "./components/Navigation/NavigationBar";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/contact/Contact";
 import Project from "./pages/project/Project";
+import SingleProject from "./pages/single-project/SingleProject";
 
 function App() {
   const [dark, setDark] = useState(true);
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/project" element={<Project />} />
+        <Route path="/project/:projectName" element={<SingleProject />} />
       </Routes>
       <Footer />
     </Router>

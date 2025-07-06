@@ -1,7 +1,7 @@
 export const FlagshipProjectsIntro = [
     {
         imgSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-top-left.webp?w=304&h=168&f=webp",
-        alt: "Flagship Projects Intro Image",
+        alt: "Flagship Project EduMatrics",
         vidSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-home-video.webm",
         subWidth: "308px",
         style: { top: "10px", right: "300px" },
@@ -10,7 +10,7 @@ export const FlagshipProjectsIntro = [
     },
     {
         imgSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-top-left.webp?w=304&h=168&f=webp",
-        alt: "Flagship Projects Intro Image",
+        alt: "Flagship Project SpaceShooter",
         vidSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-home-video.webm",
         subWidth: "278px",
         style: { top: "-20px", right: "300px" },
@@ -19,7 +19,7 @@ export const FlagshipProjectsIntro = [
     },
     {
         imgSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-top-left.webp?w=304&h=168&f=webp",
-        alt: "Flagship Projects Intro Image",
+        alt: "Flagship Project Note Hub",
         vidSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-home-video.webm",
         subWidth: "372px",
         style: { top: "10px", right: "-300px" },

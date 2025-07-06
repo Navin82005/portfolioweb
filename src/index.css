@@ -92,6 +92,16 @@
   background: linear-gradient(to right, #ec4899, #ef4444, #f59e0b);
 }
 
+.first-letter-gradient::first-letter {
+  background: linear-gradient(to right, #ec4899, #ef4444, #f59e0b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 1.5em; /* Optional styling */
+}
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
