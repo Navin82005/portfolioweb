@@ -8,6 +8,9 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./pages/contact/Contact";
 import Project from "./pages/project/Project";
 import SingleProject from "./pages/single-project/SingleProject";
+import MeChatBot from "./pages/mechat/MeChatBot";
+import MeChat from "./pages/mechat/MeChat";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [dark, setDark] = useState(true);
@@ -25,13 +28,18 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/project" element={<Project />} />
         <Route path="/project/:projectName" element={<SingleProject />} />
+        <Route path="/me-chat" element={<MeChat />} />
+        <Route path="/me" element={<MeChat />} />
+        <Route path="/mechat" element={<MeChat />} />
       </Routes>
+      {/* <MeChat /> */}
       <Footer />
     </Router>
   );

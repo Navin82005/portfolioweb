@@ -16,6 +16,7 @@ import ScreenshotGallery from './SingleScreenshotGallery';
 import TechStack from './SingleTechStack';
 import ProjectDescription from './SingleProjectDescription';
 import { useParams } from 'react-router-dom';
+import AILoader from '../../components/AILoader';
 
 const SingleProject = () => {
     const [projectData, setProjectData] = useState({});
@@ -31,7 +32,7 @@ const SingleProject = () => {
             if (!response.error) {
                 setProjectData(response.data)
             }
-            console.log("response.data", response.data)
+            // console.log("response.data", response.data)
             setLoadingProject(false);
         }
         loadProjectData();
@@ -41,7 +42,7 @@ const SingleProject = () => {
     return (
         <section className='cursor-none'>
 
-            {loadingProject ? <></> : (
+            {loadingProject ? <AILoader /> : (
                 <Fragment>
                     <SingleHero projectHero={projectData.heroSrc} projectName={projectData.name} tagline={projectData.tagline} heroAlt={projectData.heroAlt} projectLive={projectData.liveLink} />
                     <ProjectDescription shortDescription={projectData.shortDescription} description={projectData.description} />
@@ -49,7 +50,7 @@ const SingleProject = () => {
                     <Role roles={projectData.roles} />
                     <TechStack stack={projectData.techStack} />
                     <GameplayInstructions projectData={projectData.gameplayInstructions} />
-                    <FileStructureList elements={projectData.fileStructure} mainDocument={projectData.mainDocument} />
+                    <FileStructureList projectName={projectName} />
                     <InstallationGuide
                         steps={
                             projectData.installation ||

@@ -25,24 +25,15 @@ const NavigationBar = () => {
     return (
         <nav className='z-50'>
             <div className="class-name">
-                {/* <div>
-                    <img src={logo} alt="" />
-                </div>
-                <div>
-                    <Link to="/" style={{ fontFamily: 'Montserrat', fontSize: '25px' }}>aveen</Link>
-                </div> */}
                 <Naveen className="font-bold" fontSize={"3xl"} NHeight={32} NWidth={32} />
             </div>
             <div className="links-div" ref={sectionsRef}>
                 <ul className="links-div-ul">
                     <li>
-                        <Link to="/#home">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/#project-latest">Latest</Link>
-                    </li>
-                    <li>
-                        <Link to="/aboutMe#skills">Skills</Link>
+                        <Link to="/about-me">About Me</Link>
                     </li>
                     <li>
                         <Link to="/project">Works</Link>
@@ -65,19 +56,13 @@ const NavigationBar = () => {
                     <div className="menu-backdrop"></div>
                     <ul className={`links-hamburger-ul ${isHamMenuActive ? 'open' : ''}`}>
                         <li className="links-hamburger-ul-1">
-                            <Link to="/#home">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/#project-latest">Latest</Link>
-                        </li>
-                        <li>
-                            <Link to="/aboutMe#skills">Skills</Link>
+                            <Link to="/about-me">About Me</Link>
                         </li>
                         <li>
                             <Link to="/project">Works</Link>
-                        </li>
-                        <li>
-                            <Link to="/aboutMe#home">Experiences</Link>
                         </li>
                         <li>
                             <Link to="/services/freelancing">Freelancing</Link>

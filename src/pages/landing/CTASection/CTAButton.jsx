@@ -58,7 +58,6 @@ export const CTAButton1 = () => {
     useEffect(() => {
         if (holdTime >= 10000) {
             setIsDialogOpen(true);
-            console.log("Having Fun! Consider connecting with me. Let's build something amazing together!");
             stopHold();
         }
     }, [holdTime]);

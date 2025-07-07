@@ -1,4 +1,5 @@
 import { Pointer } from "../../components/Pointer";
+import MeChatSection from "./About/MeChatSection";
 import WorkWithMeCTA from "./CTASection/WorkWithMeCTA";
 import CurrentProgress from "./CurrentProgress/CurrentProgress";
 import DevLogs from "./DevLogs/DevLogs";
@@ -18,6 +19,7 @@ const Landing = () => {
       <LatestUpdates />
       <DevLogs />
       <WorkWithMeCTA />
+      <MeChatSection />
     </div>
   );
 };

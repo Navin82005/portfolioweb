@@ -1,8 +1,9 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { cn } from '../utils/aceternity';
+import { ExternalLink } from 'lucide-react';
 
-const VSCodeEditor = ({ code, language = "tsx", filename = "main.tsx", className }) => {
+const VSCodeEditor = ({ code, language = "tsx", filename = "main.tsx", className, link }) => {
     return (
         <div className={cn("rounded-md overflow-hidden border bg-[#1e1e1e] shadow-lg", className)}>
             {/* Top Bar */}
@@ -13,7 +14,7 @@ const VSCodeEditor = ({ code, language = "tsx", filename = "main.tsx", className
                     <span className="w-3 h-3 rounded-full bg-green-500" />
                 </div>
                 <div className="text-gray-300">{filename}</div>
-                <div />
+                <div><a href={link} target='_blank' className='cursor-none'><ExternalLink size={18} /></a></div>
             </div>
 
             {/* Code Block */}

@@ -5,7 +5,9 @@
 
 @font-face {
   font-family: "Blogh";
-  src: url("assets/fonts/Blogh.otf");
+  src: url("assets/fonts/Blogh.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @theme {
@@ -16,15 +18,16 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #111111;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --font-naveen: "Blogh", sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -98,7 +101,8 @@
   background-clip: text;
   color: transparent;
   font-weight: bold;
-  font-size: 1.5em; /* Optional styling */
+  font-size: 1.5em;
+  /* Optional styling */
 }
 
 
@@ -178,7 +182,32 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* shimmer-text */
+.shimmer-text {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% center;
+  }
+}
+
+/* shimmer-text */
+.shimmer-text {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% center;
   }
 }

@@ -63,11 +63,11 @@ export const getProjects = () => {
 export const getProjectData = async (projectName) => {
 
     const endPoint = `${BACKEND_URL}/project/${projectName}`;
-    const response = await axios.post(endPoint);
+    // const response = await axios.post(endPoint);
 
-    console.log("response - getProjectData: ", response.data.documentData);
+    // console.log("response - getProjectData: ", response.data.documentData);
 
-    const documentData = response.data.documentData;
+    // const documentData = response.data.documentData;
 
     const data = {
         // heroSrc: "https://github.com/Navin82005/edumetricspro/blob/main/LinkedIn%20Post%201.png?raw=true",
@@ -78,14 +78,48 @@ export const getProjectData = async (projectName) => {
         // tagline: "Manage classrooms effortlessly.",
         // liveLink: "http://localhost:5173/",
         // ...spaceshooter,
-        ...documentData,
-
-        // ...edumatricespro,
+        ...edumatricespro,
+        // ...documentData,
     };
 
     try {
         return { data: data, error: false };
     } catch (err) {
         return { error: true, message: err };
+    }
+}
+
+export const getFileStructure = async (projectName) => {
+    const endPoint = `${BACKEND_URL}/project/${projectName}/structure`;
+    try {
+        const response = await axios.post(endPoint);
+
+        if (response.data.error) {
+            return { error: true, message: response.errormessage }
+        }
+
+        return { data: response.data }
+
+    } catch (err) {
+        return { error: true, message: err.message };
+    }
+
+}
+
+export const getFileData = async (projectName, filepath) => {
+    const endPoint = `${BACKEND_URL}/project/${projectName}/code`;
+    try {
+        const response = await axios.post(endPoint, { filepath: filepath });
+
+        console.log("response - getFileData: ", response.data);
+
+        if (response.data.error) {
+            return { error: true, message: response.errormessage }
+        }
+
+        return response.data
+
+    } catch (err) {
+        return { error: true, message: err.message };
     }
 }

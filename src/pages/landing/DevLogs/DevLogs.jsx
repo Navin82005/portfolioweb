@@ -7,7 +7,6 @@ import diceImg from "../../../assets/icon/dice.png";
 import { AnimatedSpan, TypingAnimation } from "../../../components/ui/terminal";
 
 const isCustomCommand = (command) => {
-  console.log(typeof command);
   if (typeof command !== 'object') {
     return !TerminalCommands.some(cmd => cmd.commandText === command.trim());
   }
@@ -29,7 +28,6 @@ const DevLogs = () => {
       setCustomCommand(false);
     }
     if (customCommand && isCustomCommand(currentCommand)) {
-      console.log("Custom command executed:", currentCommand.commandText);
       return;
     }
     if (currentCommand.command) {
@@ -57,7 +55,6 @@ const DevLogs = () => {
     setCurrentCommand({
       commandText: e.target.value,
     });
-    console.log("Command changed:", e.target.value);
   };
 
   useEffect(() => {

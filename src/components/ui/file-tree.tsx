@@ -249,7 +249,7 @@ const Folder = forwardRef<
                         className,
                         {
                             "bg-muted rounded-md": isSelect && isSelectable,
-                            "cursor-pointer": isSelectable,
+                            "cursor-none": isSelectable,
                             "cursor-not-allowed opacity-50": !isSelectable,
                         },
                     )}
@@ -314,11 +314,11 @@ const File = forwardRef<
                 type="button"
                 disabled={!isSelectable}
                 className={cn(
-                    "flex w-fit items-center gap-1 rounded-md pr-1 text-sm duration-200 ease-in-out rtl:pl-1 rtl:pr-0",
+                    "flex w-fit hover:bg-muted items-center gap-1 rounded px-2 text-sm duration-200 ease-in-out rtl:pl-1 rtl:pr-0",
                     {
                         "bg-muted": isSelected && isSelectable,
                     },
-                    isSelectable ? "cursor-pointer" : "cursor-not-allowed opacity-50",
+                    isSelectable ? "cursor-none" : "cursor-not-allowed opacity-50",
                     direction === "rtl" ? "rtl" : "ltr",
                     className,
                 )}
@@ -360,7 +360,6 @@ const CollapseButton = forwardRef<
     }, []);
 
     useEffect(() => {
-        console.log(expandAll);
         if (expandAll) {
             expendAllTree(elements);
         }

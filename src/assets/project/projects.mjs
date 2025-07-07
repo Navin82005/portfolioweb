@@ -35,15 +35,13 @@ export const edumatricespro = {
         "frontend": "Flutter",
         "backend": "Django"
     },
-    "installation": {
-        "steps": [
-            "Clone the frontend repo: git clone https://github.com/Navin82005/edumetricspro",
-            "Clone the backend repo: git clone https://github.com/Navin82005/Edumatrics-backend",
-            "Install Flutter dependencies: flutter pub get",
-            "Run the Django backend server",
-            "Run the Flutter app using flutter run"
-        ]
-    },
+    "installation": [
+        "Clone the frontend repo: git clone https://github.com/Navin82005/edumetricspro",
+        "Clone the backend repo: git clone https://github.com/Navin82005/Edumatrics-backend",
+        "Install Flutter dependencies: flutter pub get",
+        "Run the Django backend server",
+        "Run the Flutter app using flutter run"
+    ],
     "resources": {
         "screenshots": [
             "https://github.com/Navin82005/edumetricspro/blob/main/LinkedIn%20Post%201.png"
@@ -83,36 +81,33 @@ export const spaceshooter = {
         "Python 3.x",
         "Pygame"
     ],
-    
+
     "gameplayInstructions": {
         "movement": "Use arrow keys (⬆️⬇️⬅️➡️)",
         "shooting": "Press spacebar",
         "powerUps": "Collect to boost abilities or gain lives"
     },
-    "installation": {
-        "steps": [
-            "Make sure Python 3.x is installed on your system",
-            "Install Pygame: pip install pygame",
-            "Clone the repository",
-            "Navigate to the project folder",
-            "Run the game: python main.py"
-        ]
-    },
-    "screenshots": {
-        "gameplay": [
-            "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/fire-arm.jpg?raw=true",
-            "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/enemy-fire.jpg?raw=true",
-            "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/dule-space-craft-attack.jpg?raw=true"
-        ],
-        "powerups": [
-            "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/buffer-life.jpg?raw=true",
-            "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/buffer-shield.jpg?raw=true",
-            "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/buffer-speed.jpg?raw=true"
-        ],
-        "gameEnd": [
-            "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/game-end.jpg?raw=true"
-        ]
-    },
+    "installation": [
+        "Make sure Python 3.x is installed on your system",
+        "Install Pygame: pip install pygame",
+        "Clone the repository",
+        "Navigate to the project folder",
+        "Run the game: python main.py"
+    ],
+    "screenshots": [
+        {
+            title: "gameplay",
+            src: "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/fire-arm.jpg?raw=true",
+        },
+        {
+            title: "powerups",
+            src: "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/buffer-life.jpg?raw=true",
+        },
+        {
+            title: "gameEnd",
+            src: "https://github.com/Navin82005/TempRepo/blob/main/SpaceShooter/game-end.jpg?raw=true"
+        }
+    ],
     "license": "MIT",
     "contact": {
         "email": "navin82005@gmail.com"

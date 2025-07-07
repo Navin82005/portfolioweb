@@ -1,7 +1,6 @@
 import ImageWithLoader from "../../components/ImageWithLoader";
 
 const ScreenshotGallery = ({ images }) => {
-    console.log(images);
     
     if (!images || Object.keys(images).length === 0) return null;
 

@@ -35,16 +35,13 @@ export const skills = [
 export const LatestProjects = [
   {
     index: 0,
-    prodLiveLink: "http://localhost:5173/",
-    imgUrl:
-      "https://img.freepik.com/free-vector/application-learn-languages_23-2148624202.jpg?w=826&t=st=1706246241~exp=1706246841~hmac=7a150592f1bc3d4576b51948e96bf36baeeb60f4d1907294f5e093b126c4437f",
-    videoSrc:
-      "https://cdn.jsdelivr.net/gh/elhussary/project-showcases/storeit.mp4",
+    imgUrl: "https://github.com/Navin82005/edumetricspro/blob/main/LinkedIn%20Post%201.png?raw=true",
+    // videoSrc: "https://cdn.jsdelivr.net/gh/elhussary/project-showcases/storeit.mp4",
     projectName: "EduMetrics Pro",
     projectDomain: "Flutter App",
     dataOfCompletion: "31/1/2024",
     projectShortDescription: "A classroom manager mobile application",
-    projectLink: "/project/edumetrics-pro",
+    projectLink: "/project/edumetricspro",
     prodIcon: "📚",
     tools: ["Flutter", "Firebase", "Dart"],
     descriptions: [
@@ -53,41 +50,38 @@ export const LatestProjects = [
       "Track academic progress with integrated performance analytics.",
       "Simplified UI for quick access to learning materials and homework updates.",
     ],
+    // prodLiveLink: "http://localhost:5173/",
   },
   {
     index: 1,
-    imgUrl:
-      "https://img.freepik.com/free-psd/digital-marketing-landing-page-template_23-2148924857.jpg?w=900&t=st=1706260411~exp=1706261011~hmac=72038f30c44349b0f8a2dad71ac81b82647e7f080e70a3a63c6cd785f2fdcefb",
-    projectName: "Project Hub",
-    projectDomain: "Web App",
-    dataOfCompletion: "5/2/2024",
-    projectShortDescription: "A website to support student and developers",
-    projectLink: "/project/project-hub",
-    prodIcon: "🌐",
-    tools: ["React", "Node.js", "Express", "MongoDB"],
-    videoSrc:
-      "https://cdn.jsdelivr.net/gh/elhussary/project-showcases/storeit.mp4",
+    imgUrl: "https://github.com/Navin82005/Notes-Sharing-Platform/blob/main/outputs/NoteHubThumbnail.png?raw=true",
+    // videoSrc: "https://cdn.jsdelivr.net/gh/elhussary/project-showcases/storeit.mp4", // Placeholder, update with actual demo if any
+    projectName: "NoteHub",
+    projectDomain: "Mobile App",
+    dataOfCompletion: "4/2024",
+    projectShortDescription: "A mobile app to share and access educational notes easily.",
+    projectLink: "/project/Notes-Sharing-Platform",
+    prodIcon: "📱",
+    tools: ["Flutter", "Firebase", "Cloud Storage"],
     descriptions: [
-      "Centralized platform for students and developers to showcase and collaborate on projects.",
-      "Built-in profile, resource sharing, and categorized project repositories.",
-      "Includes search, filtering, and bookmarking functionalities.",
-      "Responsive UI designed for both mobile and desktop views.",
+      "NoteHub is a mobile application that enables students to upload, share, and explore study notes.",
+      "Features include secure authentication, profile customization, upvoting, commenting, and offline access.",
+      "Powered by Firebase for real-time data syncing and cloud storage.",
+      "Provides a clean UI, subject categorization, and advanced filtering/search capabilities."
     ],
-    prodLiveLink: "http://localhost:5173/",
+    // prodLiveLink: "https://github.com/Navin82005/Notes-Sharing-Platform"
   },
   {
     index: 2,
-    imgUrl:
-      "https://img.freepik.com/free-vector/space-explorer-landing-page-template_107791-16255.jpg?w=740&t=st=1706260494~exp=1706261094~hmac=6514cf89f1193473d4e88c72012d3acbe65df967b9d146b53463676b583f2a4e",
+    imgUrl: "https://github.com/Navin82005/Space-Shoter/blob/main/space-shooter-thumbnail.jpeg?raw=true",
+    // videoSrc: "https://cdn.jsdelivr.net/gh/elhussary/project-showcases/storeit.mp4",
     projectName: "Space Shooter",
     projectDomain: "Game Application",
     dataOfCompletion: "12/12/2022",
     projectShortDescription: "A game in which the user destroys enemy ships",
-    projectLink: "/project/space-shooter",
+    projectLink: "/project/Space-Shoter",
     prodIcon: "🚀",
     tools: ["Python", "Pygame"],
-    videoSrc:
-      "https://cdn.jsdelivr.net/gh/elhussary/project-showcases/storeit.mp4",
     descriptions: [
       "Fast-paced 2D arcade shooter with power-ups and increasing difficulty levels.",
       "Collision detection, enemy wave spawns, and score tracking system.",

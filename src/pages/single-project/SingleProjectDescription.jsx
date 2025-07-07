@@ -1,4 +1,5 @@
 const ProjectDescription = ({ shortDescription, description }) => {
+
     return (
         <section className="py-8 px-4 md:py-16 md:px-12 overflow-hidden text-white">
             <h1 className="text-center text-4xl font-bold gradient-text mb-2">Description</h1>

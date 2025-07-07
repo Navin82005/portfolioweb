@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 
 import ProjectRouter from "./routes/projects.routes.mjs";
+import logger from "./middlewares/middleware.mjs";
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ app.use(cors(
     }
 ));
 
+app.use(logger);
 
 app.use(express.json());
 

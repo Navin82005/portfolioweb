@@ -5,7 +5,6 @@ import {
 } from "../../../components/ui/terminal";
 
 const TerminalRevel = ({ section }) => {
-  console.log(section.command);
   return (
     <Terminal title={section.title}>
       <TypingAnimation>{`> ${section.command.toString()}`}</TypingAnimation>
