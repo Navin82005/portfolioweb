@@ -151,7 +151,7 @@ const FileStructureList = ({ projectName }) => {
             )}
 
             <div
-                className={`${showTree ? "block" : "hidden"}  transition-all duration-300 lg:block w-full lg:w-1/3 transition-all duration-300 ease-in-out`}
+                className={`${showTree ? "block" : "hidden"}  transition-all duration-300 lg:block w-full lg:w-1/3 ease-in-out`}
             >
                 <div className="flex items-center justify-between mb-4">
                     <h2 className="text-2xl font-semibold">📁 File Structure</h2>

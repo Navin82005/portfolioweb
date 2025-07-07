@@ -1,37 +1,51 @@
 import { CTAButton1 } from "./CTAButton";
-
 import bgConnectImage from "../../../assets/images/global-network-icon.png";
 
 const WorkWithMeCTA = () => {
     return (
-        <section className="py-12">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
-                    Ready to take your project to the next level?
+        <section className="relative py-24 bg-black overflow-hidden text-white">
+            {/* Blurred Background Graphic */}
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
+                <img
+                    src={bgConnectImage}
+                    alt="Background"
+                    className="absolute inset-0 w-full h-full object-contain opacity-10"
+                />
+                <div className="absolute inset-0 blur-2xl" />
+            </div>
+
+            <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-center lg:text-left mb-16">
+                    Ready to take your <span className="gradient-text">project</span> to the next level?
                 </h2>
-                <div className="flex flex-col items-center mt-8 justify-between h-full lg:flex-row gap-10 lg:h-[60vh]">
-                    <div className="relative w-full lg:w-1/2 flex justify-center items-center lg:h-full lg:min-h-[60vh] h-[30vh]">
-                        <img
-                            src={bgConnectImage}
-                            alt="Network background"
-                            className="z-0 absolute inset-0 w-full h-full object-contain opacity-50"
-                        />
-                        <div className="relative z-10 flex flex-col items-center justify-center h-full">
-                            <CTAButton1 />
-                        </div>
+
+                <div className="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-12">
+                    {/* Text Section */}
+                    <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
+                        <p className="text-lg md:text-xl text-white/90">
+                            I don't just write code<span className="gradient-text"> — I</span> bring ideas to life.
+                            With a full-stack mindset, design-first approach, and a passion for solving meaningful problems,
+                            I turn concepts into interactive realities.
+                        </p>
+                        <p className="text-lg md:text-xl text-white/80">
+                            Whether you're launching a product, building a prototype, or tackling a challenge,
+                            I bring clarity, creativity, and commitment to ship.
+                        </p>
                     </div>
-                    <div className="w-full lg:w-1/2 px-3">
-                        <p className="mt-4 text-lg text-gray-600 dark:text-white">
-                            I don't just write code<span className="gradient-text"> — I</span> bring ideas to life. With a strong foundation in full-stack development, a design-first mindset, and a passion for building things that matter, I focus on creating user experiences that are both functional and delightful.
-                        </p>
-                        <p className="mt-2 text-lg text-gray-600 dark:text-white">
-                            Whether it's a product, a prototype, or a problem to solve, I bring clarity, curiosity, and a commitment to ship.
-                        </p>
+
+                    {/* CTA Section */}
+                    <div className="w-full lg:w-1/2 flex justify-center items-center">
+                        <div className="relative flex justify-center items-center w-full max-w-sm">
+                            <div className="absolute -inset-2" />
+                            <div className="relative z-10">
+                                <CTAButton1 />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     );
-}
+};
 
 export default WorkWithMeCTA;

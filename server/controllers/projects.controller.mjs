@@ -67,8 +67,11 @@ export const getProjectFile = async (req, res) => {
 
         const cleanedPath = filepath.startsWith("root/") ? filepath.replace("root/", "") : filepath;
         const targetPath = cleanedPath || "README.md";
+        console.log(filepath, targetPath)
 
         const url = `https://api.github.com/repos/${repoOwner}/${projectName}/contents/${targetPath}`;
+
+        console.log(url)
 
         const response = await axios.get(url, {
             headers: {

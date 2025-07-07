@@ -2,7 +2,6 @@ import React, { Fragment, useEffect, useState } from 'react'
 import { getProjectData } from '../../controllers/project.controller.mjs';
 import SingleHero from './SingleHero';
 import { ArrowPointer } from '../../components/Pointers';
-import { edumatricespro } from '../../assets/project/projects.mjs';
 import AnalyticsImage from './SingleAnalyticsImage';
 import ContactSection from './SingleContactSection';
 import FeatureList from './SingleFeatures';

@@ -40,7 +40,7 @@ const ProjectShowcase = () => {
             {randomTitle}
             <h4 className='text-center font-bold mt-5'><span className='gradient-text'>Explore</span> a collection of ideas turned into impact <span className='italic'> — where code meets creativity.</span></h4>
             <div className='mt-8 flex flex-row flex-wrap justify-center'>
-                {projectData.map((project, idx) => {
+                {projectData.map((project) => {
                     return <ProjectShowCard className="mx-2 mb-8" project={project} key={project.project} />
                 })}
             </div>

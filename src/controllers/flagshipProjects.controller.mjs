@@ -2,6 +2,7 @@ export const FlagshipProjectsIntro = [
     {
         imgSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-top-left.webp?w=304&h=168&f=webp",
         alt: "Flagship Project EduMatrics",
+        projectLink: "/project/edumetricspro",
         vidSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-home-video.webm",
         subWidth: "308px",
         style: { top: "10px", right: "300px" },
@@ -15,6 +16,7 @@ export const FlagshipProjectsIntro = [
         subWidth: "278px",
         style: { top: "-20px", right: "300px" },
         project: "SpaceShooter",
+        projectLink: "/project/Space-Shoter",
         projectShortDescription: "A game in which the user destroys enemy ships",
     },
     {
@@ -22,6 +24,7 @@ export const FlagshipProjectsIntro = [
         alt: "Flagship Project Note Hub",
         vidSrc: "https://cdn-front.freepik.com/revamp/temp/hero/v2-home-video.webm",
         subWidth: "372px",
+        projectLink: "/project/Notes-Sharing-Platform",
         style: { top: "10px", right: "-300px" },
         project: "Note Hub",
         projectShortDescription: "A Application where the users can share their subject notes to the platform and share to others",

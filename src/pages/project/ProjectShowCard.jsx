@@ -63,7 +63,7 @@ const ProjectShowCard = ({ className, project }) => {
                 )}
                 <img
                     onDoubleClick={() => handleImageOnDoubleClick(project.imgSrc)}
-                    onClick={() => handleImageOnClick(project.project)}
+                    onClick={() => handleImageOnClick(project.projectLink)}
                     src={project.imgSrc}
                     alt={project.alt || project.project}
                     onLoad={() => setIsLoading(false)}
@@ -75,7 +75,7 @@ const ProjectShowCard = ({ className, project }) => {
                 />
             </div>
             <div className="mt-2 text-xl font-bold flex flex-row items-center">
-                <span onClick={() => handleOpenProject(project.project)}>
+                <span onClick={() => handleOpenProject(project.projectLink)}>
                     {project.project}
                 </span>
                 <svg
@@ -95,7 +95,7 @@ const ProjectShowCard = ({ className, project }) => {
                     />
                 </svg>
             </div>
-            <div onClick={() => handleOpenProject(project.project)} className="text-muted-foreground">{project.tagline}</div>
+            <div onClick={() => handleOpenProject(project.projectLink)} className="text-muted-foreground">{project.tagline}</div>
         </div>
     );
 };

@@ -10,7 +10,7 @@ import { Icons } from "../../pages/contact/ContactAnimatedBeam";
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white py-4">
+        <footer className="bg-[#111] text-white py-4">
             <div className="px-12 md:px-24 py-8 flex min-h-[300px] flex-col lg:flex-row items-start justify-start">
                 <div className="lg:w-1/2 py-8">
                     <Naveen className="font-bold cursor-none gap-1" fontSize={"3xl"} NHeight={32} NWidth={32} />

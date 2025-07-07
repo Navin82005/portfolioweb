@@ -48,12 +48,12 @@ const FlagshipProject = () => {
                                             autoPlay
                                             muted
                                             loop
-                                            onClick={() => navigator(project.project)}
+                                            onClick={() => navigator(project.projectLink)}
                                             className="z-10 w-[600px] h-auto rounded-lg shadow-lg md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 hover:scale-101 md:hover:scale-110 transition-all duration-300"
                                         />
                                     </BlurFade>
                                     <BlurFade className='md:hidden'>
-                                        <div className='flex flex-row items-center justify-start mt-3' onClick={() => navigator(project.project)}>
+                                        <div className='flex flex-row items-center justify-start mt-3' onClick={() => navigator(project.projectLink)}>
                                             <h1 className='text-3xl block font-bold gradient-text'>{project.project}</h1>
                                             <Code className="mt-auto" />
                                         </div>
