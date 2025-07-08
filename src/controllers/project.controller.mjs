@@ -228,11 +228,11 @@ export const getProjects = () => {
 export const getProjectData = async (projectName) => {
 
     const endPoint = `${BACKEND_URL}/project/${projectName}`;
-    // const response = await axios.post(endPoint);
+    const response = await axios.post(endPoint);
 
-    // console.log("response - getProjectData: ", response.data.documentData);
+    console.log("response - getProjectData: ", response.data.documentData);
 
-    // const documentData = response.data.documentData;
+    const documentData = response.data.documentData;
 
     const data = {
         // heroSrc: "https://github.com/Navin82005/edumetricspro/blob/main/LinkedIn%20Post%201.png?raw=true",
@@ -243,8 +243,8 @@ export const getProjectData = async (projectName) => {
         // tagline: "Manage classrooms effortlessly.",
         // liveLink: "http://localhost:5173/",
         // ...spaceshooter,
-        ...edumatricespro,
-        // ...documentData,
+        // ...edumatricespro,
+        ...documentData,
     };
 
     try {

@@ -1,13 +1,21 @@
 import { useState } from "react"
 import ImageWithLoader from "../../components/ImageWithLoader";
+import { ChevronLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const SingleHero = ({ projectHero, heroAlt, projectName, tagline, projectLive }) => {
-
     const [isLoading, setIsLoading] = useState(true);
+    const navigator = useNavigate();
 
     return (
-        <section className='pt-[80px] h-screen relative overflow-hidden bg-black text-white flex items-center justify-center'>
-            <article className="container max-w-2xl py-14">
+        <section className='h-screen relative overflow-hidden bg-black text-white flex items-center justify-center'>
+            <article className="container max-w-2xl pb-14">
+                <div className='pt-[80px] relative overflow-hidden bg-black text-white flex items-center justify-start'>
+                    <button className='flex group flex-row justify-center items-center font-semibold cursor-none' onClick={() => navigator(-1)}>
+                        <ChevronLeft className="pl-3 group-hover:pl-0 transition-all duration-300" />
+                        <div>Back</div>
+                    </button>
+                </div>
                 <h2 className="mb-4 text-center text-5xl font-bold leading-[1.2] tracking-tighter gradient-text">{projectName}</h2>
                 <h3 className="mx-auto mb-8 text-balance text-center text-lg font-medium tracking-tight text-foreground/80">{tagline}</h3>
                 <a className="group relative flex cursor-none flex-col gap-2 overflow-hidden" href={projectLive}>

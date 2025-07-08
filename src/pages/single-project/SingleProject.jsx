@@ -20,7 +20,6 @@ import AILoader from '../../components/AILoader';
 const SingleProject = () => {
     const [projectData, setProjectData] = useState({});
     const [loadingProject, setLoadingProject] = useState(true);
-
     const { projectName } = useParams();
 
     useEffect(() => {
@@ -40,7 +39,6 @@ const SingleProject = () => {
 
     return (
         <section className='cursor-none'>
-
             {loadingProject ? <AILoader /> : (
                 <Fragment>
                     <SingleHero projectHero={projectData.heroSrc} projectName={projectData.name} tagline={projectData.tagline} heroAlt={projectData.heroAlt} projectLive={projectData.liveLink} />

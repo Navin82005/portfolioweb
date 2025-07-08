@@ -1,5 +1,5 @@
 import { Pointer } from "../../components/Pointer";
-import MeChatSection from "./About/MeChatSection";
+import NavyaSection from "./About/NavyaSection";
 import WorkWithMeCTA from "./CTASection/WorkWithMeCTA";
 import CurrentProgress from "./CurrentProgress/CurrentProgress";
 import DevLogs from "./DevLogs/DevLogs";
@@ -19,7 +19,7 @@ const Landing = () => {
       <LatestUpdates />
       <DevLogs />
       <WorkWithMeCTA />
-      <MeChatSection />
+      <NavyaSection />
     </div>
   );
 };

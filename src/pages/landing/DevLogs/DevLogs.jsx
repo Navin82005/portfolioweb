@@ -66,16 +66,29 @@ const DevLogs = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  return <section className="dev-logs container px-[4vw] py-8 md:py-16 lg:py-24">
+  return <section className="relative min-w-full px-[4vw] py-8 md:py-16 lg:py-24 overflow-hidden bg-black">
+    {/* Gradient Glow Layer */}
+    {/* <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] opacity-40" /> */}
+
+    {/* Noise Texture Layer as Image */}
+    {/* <img
+      src="https://github.com/Navin82005/TempRepo/blob/main/noise.png?raw=true"
+      alt="noise-texture"
+      className="absolute inset-0 w-full h-full object-cover z-[-10] opacity-[0.03] mix-blend-soft-light pointer-events-none animate-pulse"
+    /> */}
+
+    {/* Gradient Background */}
+    {/* <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] opacity-40" /> */}
+
+    {/* Terminal Content */}
     <div className="mb-8 flex flex-row justify-end items-end">
-      <h2 className="text-2xl md:text-3xl text-right lg:text-4xl font-bold tracking-tighter">
+      <h2 className="text-2xl md:text-3xl text-right lg:text-4xl font-bold tracking-tighter text-white">
         Random Dev Logs
       </h2>
       <button
         onClick={handleRandomCommand}
         className="cursor-none fill-white text-white font-bold rounded mx-3"
       >
-        {/* <a href="https://www.flaticon.com/free-icons/dice" title="dice icons">Dice icons created by Mayor Icons - Flaticon</a> */}
         <img
           src={diceImg}
           height={32}
@@ -90,7 +103,7 @@ const DevLogs = () => {
 
       <div
         className=
-        "z-0 h-full min-h-[400px] max-h-[500px]   rounded-xl bg-background dark:bg-black"
+        "z-0 h-full min-h-[400px] bg-[#111] max-h-[500px] rounded-xl"
       >
         <div className="flex flex-col justify-center gap-y-2 border-b border-gray-800 p-4">
           <div className="flex flex-row items-center justify-between">

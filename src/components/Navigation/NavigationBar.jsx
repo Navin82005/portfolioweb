@@ -33,7 +33,7 @@ const NavigationBar = () => {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about-me">About Me</Link>
+                        <Link to="/about">About Me</Link>
                     </li>
                     <li>
                         <Link to="/project">Works</Link>
@@ -59,7 +59,7 @@ const NavigationBar = () => {
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/about-me">About Me</Link>
+                            <Link to="/about">About Me</Link>
                         </li>
                         <li>
                             <Link to="/project">Works</Link>
