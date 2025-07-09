@@ -1,4 +1,4 @@
-import Naveen from './naveen.png';
+import Naveen from './Naveen.png';
 
 const Images = {
     Naveen: Naveen,
