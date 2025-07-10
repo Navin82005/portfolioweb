@@ -1,0 +1,68 @@
+.snake-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #0d1117, #0b0f1c);
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: 'Fira Code', monospace;
+}
+
+.snake-title {
+    color: #c9d1d9;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.snake-grid {
+    display: grid;
+    grid-template-columns: repeat(53, 14px);
+    grid-template-rows: repeat(7, 14px);
+    gap: 2px;
+    background-color: #0d1117;
+    border: 1px solid #21262d;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0d1117;
+}
+
+.cell {
+    width: 14px;
+    height: 14px;
+    background-color: #161b22;
+    border-radius: 3px;
+    box-shadow: inset 0 0 2px #000;
+    transition: transform 0.2s ease;
+}
+
+.cell.food {
+    background-color: #39d353;
+    box-shadow: 0 0 6px #39d353;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+.cell.snake-body {
+    background-color: #ff5555;
+    box-shadow: 0 0 5px #ff5555;
+}
+
+.cell.snake-head {
+    background-color: #ff0033;
+    box-shadow: 0 0 10px #ff0033, 0 0 15px #ff0000 inset;
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
