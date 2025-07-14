@@ -12,7 +12,7 @@ const app = express();
 // app.use(cors(
 //     {
 //         // origin: "http://localhost:5173",
-//         origin: "https://1trzwbkm-5173.inc1.devtunnels.ms/",
+//         origin: "https://naveen82005n.netlify.app/",
 //         credentials: false,
 //     }
 // ));
@@ -20,13 +20,13 @@ const app = express();
 
 // Option 1: Use the `cors` middleware (recommended)
 app.use(cors({
-    origin: 'https://1trzwbkm-5173.inc1.devtunnels.ms',
+    origin: 'https://naveen82005n.netlify.app',
     credentials: true,
 }));
 
 // Option 2: Manually set headers (if you want more control)
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://1trzwbkm-5173.inc1.devtunnels.ms');
+    res.header('Access-Control-Allow-Origin', 'https://naveen82005n.netlify.app');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next();
@@ -36,7 +36,7 @@ app.use((req, res, next) => {
 // app.options('*', cors());
 
 // app.use(cors({
-//     origin: "https://1trzwbkm-5173.inc1.devtunnels.ms",
+//     origin: "https://naveen82005n.netlify.app",
 //     methods: ["GET", "POST", "PUT", "DELETE"],
 //     // credentials: true, // only if you need cookies or auth headers
 // }));
