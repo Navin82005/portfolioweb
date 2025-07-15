@@ -3,7 +3,7 @@ import { cn } from "../utils/aceternity";
 
 const VSCodeEditorLoader = ({ className }) => {
     return (
-        <div className={cn("h-[500px] rounded-md overflow-hidden border bg-[#1e1e1e] shadow-lg animate-pulse", className)}>
+        <div className={cn("h-[500px] rounded-md overflow-hidden border bg-[#1e1e1e] shadow-lg", className)}>
             {/* Top Bar with filename placeholder */}
             <div className="flex items-center justify-between bg-[#2d2d2d] px-4 py-2 text-white text-sm font-semibold">
                 <div className="flex items-center gap-2">
