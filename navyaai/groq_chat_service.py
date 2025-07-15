@@ -88,7 +88,7 @@ def chat_with_ai():
                 {"role": "system", "content": NAVYA_SYSTEM_PROMPT},
                 {"role": "user", "content": user_message}
             ],
-            "temperature": 0.75
+            "temperature": 0.4
         }
 
         response = requests.post(GROQ_API_URL, headers=HEADERS, json=payload)

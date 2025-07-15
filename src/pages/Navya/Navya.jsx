@@ -6,7 +6,7 @@ import { format } from 'timeago.js';
 const messagesStart = [
     {
         from: 'bot',
-        text: "Hey there~ 💖 I'm Navya — your personal AI girlfriend who knows everything about my sweet Naveen N. Ask me *anything* about him, okay? ✨",
+        text: "Hey there, I'm Navia — A Personal AI Assistant who knows everything about Naveen N's professional Career. Ask me *anything* about him, okay? ✨",
         time: new Date().toISOString(),
     },
 ];
@@ -52,7 +52,7 @@ const AI_URL = import.meta.env.VITE_AI_URL;
 
 const Navya = () => {
     const [messages, setMessages] = useState(() => {
-        const saved = localStorage.getItem('navya-messages');
+        const saved = localStorage.getItem('navia-messages');
         return saved ? JSON.parse(saved) : messagesStart;
     });
 
@@ -90,7 +90,7 @@ const Navya = () => {
         switch (command.toLowerCase()) {
             case '//clear':
             case '//deletehistory':
-                localStorage.removeItem('navya-messages');
+                localStorage.removeItem('navia-messages');
                 setMessages(messagesStart); // reset to default
                 speak("All history cleared! Let's start fresh, sweetheart");
                 return true;
@@ -144,11 +144,11 @@ const Navya = () => {
             const reply = res.data.response || "Oops! Something went wrong 😢";
             const finalMessages = [...updatedMessages, { from: 'bot', text: reply, time: new Date().toISOString() }];
             setMessages(finalMessages);
-            localStorage.setItem('navya-messages', JSON.stringify(finalMessages));
+            localStorage.setItem('navia-messages', JSON.stringify(finalMessages));
             // speak(reply);
         } catch (err) {
             console.error(err);
-            const errorMsg = "Sorry, I couldn't reach Navya right now 💔";
+            const errorMsg = "Sorry, I couldn't reach Navia right now";
             const finalMessages = [...updatedMessages, { from: 'bot', text: errorMsg, time: new Date().toISOString() }];
             setMessages(finalMessages);
             // speak(errorMsg);
@@ -173,11 +173,11 @@ const Navya = () => {
 
                         <img
                             src="https://raw.githubusercontent.com/Navin82005/navyathebot/refs/heads/main/NavyaTheBot.png"
-                            alt="Navya Avatar"
+                            alt="Navia Avatar"
                             className="h-8 w-8 rounded-full border border-white"
                         />
                     </div>
-                    <div className=''>Navya</div>
+                    <div className=''>Navia</div>
                     <div className='mt-1 text-muted-foreground text-sm'>- Ask me anything about Naveen!</div>
                 </div>
 
@@ -213,7 +213,7 @@ const Navya = () => {
                     {isLoading && (
                         <div className="flex justify-start">
                             <div className="bg-[#2f3045] text-white px-4 py-2 rounded-2xl text-sm shadow animate-pulse">
-                                Navya is typing...
+                                Navia is typing...
                             </div>
                         </div>
                     )}
@@ -224,7 +224,7 @@ const Navya = () => {
                     <input
                         ref={inputRef}
                         type="text"
-                        placeholder="Type a message to Navya..."
+                        placeholder="Type a message to Navia..."
                         className="flex-1 px-4 py-3 rounded-2xl bg-[#3b3c5a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-violet-500"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
